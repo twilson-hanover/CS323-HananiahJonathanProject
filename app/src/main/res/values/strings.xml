@@ -3,4 +3,8 @@
     <string name="button_response">Thanks for your order!</string>
     <string name="button_text">Submit Order</string>
     <string name="name">Enter Your Name</string>
+    <string-array name="options">
+        <item>Food</item>
+        <item>Drinks</item>
+    </string-array>
 </resources>
