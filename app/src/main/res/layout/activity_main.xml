@@ -29,7 +29,8 @@
         android:id="@+id/list_options"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:entries="@array/options" />
+        android:entries="@array/options"
+        android:paddingTop="60dp" />
 
     <Button
         android:id="@+id/button"
@@ -40,4 +41,13 @@
         android:layout_marginBottom="46dp"
         android:onClick="onClick"
         android:text="@string/button_text" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 </RelativeLayout>
