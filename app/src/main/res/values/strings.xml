@@ -1,10 +1,20 @@
 <resources>
     <string name="app_name">McJon-Nae</string>
     <string name="button_response">Thanks for your order!</string>
+    <string name="add">Added to your order!</string>
     <string name="button_text">Submit Order</string>
     <string name="name">Enter Your Name</string>
+
     <string-array name="options">
         <item>Food</item>
         <item>Drinks</item>
     </string-array>
+
+    <string-array name="titles">
+        <item>Food</item>
+        <item>Drinks</item>
+    </string-array>
+    <string name="action_create_order">Create Order</string>
+    <string name="action_settings">Settings</string>
+    <color name="white">#FFFFFF</color>
 </resources>

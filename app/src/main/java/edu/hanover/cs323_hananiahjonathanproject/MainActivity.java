@@ -10,16 +10,19 @@ import android.widget.ListView;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toolbar;
 import android.view.Menu;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.view.MenuItem;
+import android.app.ActionBar;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-//        setSupportActionBar(myToolbar);
-        //Create an OnItemClickListener
+//        ActionBar actionBar = getActionBar();
+//        actionBar.setDisplayHomeAsUpEnabled(true);
+
         AdapterView.OnItemClickListener itemClickListener =
                 new AdapterView.OnItemClickListener(){
                     public void onItemClick(AdapterView<?> listView,
@@ -41,6 +44,7 @@ public class MainActivity extends AppCompatActivity{
         //Add the listener to the list view
         ListView listView = (ListView) findViewById(R.id.list_options);
         listView.setOnItemClickListener(itemClickListener);
+
     }
     public void onClick(View view) {
         Intent intent = new Intent(this, OrderConfirmation.class);
@@ -48,11 +52,20 @@ public class MainActivity extends AppCompatActivity{
                 getResources().getString(R.string.button_response));
         startService(intent);
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu, menu);
+//        return super.onCreateOptionsMenu(menu);
+//    }
 
+//    private void setActionBarTitle(int position) {
+//        String title;
+//        if (position == 0) {
+//            title = getResources().getString(R.string.app_name);
+//        } else {
+//            title = getResources().getString(R.string.app_name);
+//        }
+//        getActionBar().setTitle(title);
+//    }
 }

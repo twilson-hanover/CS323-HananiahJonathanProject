@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DrinkActivity">
+    tools:context=".DrinkActivity"
+    android:background="@color/white">
 
     <CheckBox
         android:id="@+id/checkBox6"
@@ -35,4 +36,22 @@
         android:text="Water"
         tools:layout_editor_absoluteX="52dp"
         tools:layout_editor_absoluteY="146dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/drink" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:text="Add to Order" />
+
+
 </RelativeLayout>
