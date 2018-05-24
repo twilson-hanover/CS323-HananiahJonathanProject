@@ -26,7 +26,7 @@ public class AddDrink extends IntentService {
     protected void onHandleIntent(Intent intent) {
         synchronized (this) {
             try {
-                wait(500);
+                wait(400);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
