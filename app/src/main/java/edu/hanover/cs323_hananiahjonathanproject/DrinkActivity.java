@@ -12,8 +12,10 @@ import android.widget.ListView;
 import android.app.ActionBar;
 import android.view.MenuItem;
 
+//code for drinks page
 public class DrinkActivity extends Activity {
 
+    //called when the drinks page is initiated
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,7 @@ public class DrinkActivity extends Activity {
 //        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
+    //when the button on this page is clicked it calls the on this method
     public void onClick(View view) {
         Intent intent = new Intent(this, AddDrink.class);
         intent.putExtra(AddDrink.EXTRA_MESSAGE,

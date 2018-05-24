@@ -16,6 +16,7 @@ import android.app.ActionBar;
 
 public class MainActivity extends Activity{
 
+    //called when the main page is initiated
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +24,7 @@ public class MainActivity extends Activity{
 //        ActionBar actionBar = getActionBar();
 //        actionBar.setDisplayHomeAsUpEnabled(true);
 
+        //A listview with two options(foods & drinks)...gives you a option to choose both
         AdapterView.OnItemClickListener itemClickListener =
                 new AdapterView.OnItemClickListener(){
                     public void onItemClick(AdapterView<?> listView,
@@ -46,6 +48,8 @@ public class MainActivity extends Activity{
         listView.setOnItemClickListener(itemClickListener);
 
     }
+
+    //when the orderConfirmation button is clicked it calles on this message, when then queues the toast
     public void onClick(View view) {
         Intent intent = new Intent(this, OrderConfirmation.class);
         intent.putExtra(OrderConfirmation.EXTRA_MESSAGE,

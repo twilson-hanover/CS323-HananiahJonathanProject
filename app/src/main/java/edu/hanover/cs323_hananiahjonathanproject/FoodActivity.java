@@ -14,8 +14,10 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 import android.app.ActionBar;
 
+//code for food page
 public class FoodActivity extends Activity {
 
+    //called when the food page is initiated
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,7 @@ public class FoodActivity extends Activity {
 //        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
+    //when the button on this page is clicked it calls the on this method
     public void onClick(View view) {
         Intent intent = new Intent(this, AddFood.class);
         intent.putExtra(AddFood.EXTRA_MESSAGE,

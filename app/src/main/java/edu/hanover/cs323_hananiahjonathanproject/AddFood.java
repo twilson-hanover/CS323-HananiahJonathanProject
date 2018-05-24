@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.widget.Toast;
 
-//Method so we can add the chosen food to the customer's order
+//Class so we can add the chosen food to the customer's order
 public class AddFood extends IntentService {
     public static final String EXTRA_MESSAGE = "message";
     private Handler handler;
@@ -14,6 +14,7 @@ public class AddFood extends IntentService {
         super("AddFood");
     }
 
+    //called everytime a client starts a service
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         handler = new Handler();

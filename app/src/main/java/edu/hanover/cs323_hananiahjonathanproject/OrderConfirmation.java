@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.widget.Toast;
 
+//Class that creates a submit order button with a toast
 public class OrderConfirmation extends IntentService {
     public static final String EXTRA_MESSAGE = "message";
     private Handler handler;
@@ -13,12 +14,14 @@ public class OrderConfirmation extends IntentService {
         super("OrderConfirmation");
     }
 
+    //called everytime a client starts a service
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         handler = new Handler();
         return super.onStartCommand(intent, flags, startId);
     }
 
+    //Method that makes the toast functional
     @Override
     protected void onHandleIntent(Intent intent) {
         synchronized (this) {
@@ -31,6 +34,8 @@ public class OrderConfirmation extends IntentService {
         String text = intent.getStringExtra(EXTRA_MESSAGE);
         showText(text);
     }
+
+    //Displays the text after the button is clicked
     private void showText(final String text) {
         handler.post(new Runnable() {
             @Override
