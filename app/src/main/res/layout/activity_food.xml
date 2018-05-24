@@ -7,6 +7,7 @@
     tools:context=".FoodActivity"
     android:background="@color/white">
 
+    //Checkbox for hamburger
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
@@ -18,6 +19,7 @@
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="239dp" />
 
+    //Checkbox for Chicken Sandwich
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
@@ -29,6 +31,7 @@
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="190dp" />
 
+    //CheckBox for Chicken Tenders
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
@@ -40,6 +43,7 @@
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="293dp" />
 
+    //Checkbox for Hotdog
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
@@ -51,6 +55,7 @@
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="348dp" />
 
+    //Checkbox for french fries
     <CheckBox
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
@@ -62,6 +67,7 @@
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="138dp" />
 
+    //Burger picture
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -71,6 +77,7 @@
         android:layout_marginBottom="120dp"
         android:src="@drawable/burger" />
 
+    //"Add to order" button on food's page
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"

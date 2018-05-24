@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.widget.Toast;
 
+//Method so we can add the chosen drink to the customer's order
 public class AddDrink extends IntentService {
     public static final String EXTRA_MESSAGE = "message";
     private Handler handler;
@@ -19,6 +20,7 @@ public class AddDrink extends IntentService {
         return super.onStartCommand(intent, flags, startId);
     }
 
+    //Method that makes the toast functional
     @Override
     protected void onHandleIntent(Intent intent) {
         synchronized (this) {
@@ -31,6 +33,8 @@ public class AddDrink extends IntentService {
         String text = intent.getStringExtra(EXTRA_MESSAGE);
         showText(text);
     }
+
+    //Displays the text after the button is clicked
     private void showText(final String text) {
         handler.post(new Runnable() {
             @Override
